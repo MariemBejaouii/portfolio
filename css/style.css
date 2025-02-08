@@ -16,10 +16,10 @@
 /* Définition des variables CSS */
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
+    --bg-color: #1f242d !important;
+    --second-bg-color: #282d35 !important;
+    --text-color: #fff !important;
+    --main-color: #8454d7 !important;
 }
 
 html {
@@ -195,7 +195,7 @@ span {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: cyan;
+    background: #8454d7 !important;
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
@@ -549,10 +549,6 @@ span {
     line-height: 1.3;
 }
 
-.home-img img {
-    width: 35vw;
-}
-
 .home-content p {
     font-size: 1.6rem;
 }
@@ -989,7 +985,7 @@ span {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 20vw;
 }
 
 .home-content p {
@@ -1400,8 +1396,8 @@ span {
 }
 
 .home-img {
-    width: 70vw;
-    margin-top: 4rem;
+    width: 10vw;
+    margin-top: 1rem;
 }
 
 .about {
@@ -1454,5 +1450,4 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
-    transform:;
 }
