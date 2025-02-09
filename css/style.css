@@ -1455,7 +1455,7 @@ span {
 .stage-cube-cont {
     width: 50%;
     height: 50vh;
-    padding-bottom: 40rem;
+    padding-bottom: 20rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -1552,7 +1552,7 @@ span {
         margin-left: 0;
         overflow: hidden;
         position: absolute;
-        top: -50px;
+        bottom: -950px;
         right: 0px;
         display: flex;
         justify-content: flex-end;
