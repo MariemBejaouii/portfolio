@@ -7,6 +7,9 @@
     <!-- Lien vers la feuille de style -->
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
 
     <!--box icons-->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -24,8 +27,10 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#skillsAndTools">Skills And Tools</a>
+            <!--
             <a href="#portfolio">Portfolio</a>
+            -->
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -56,8 +61,15 @@
 
     <!--about section design-->
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/home.png" alt="Image de présentation ">
+        <div class="stage-cube-cont">
+            <div class="cubespinner">
+                <div class="face face1"><img src="images/angular.svg" alt="Angular"></div>
+                <div class="face face2"><img src="images/spring-boot.svg" alt="Spring-boot"></div>
+                <div class="face face3"><img src="images/dotnet.svg" alt="dotnet"></div>
+                <div class="face face4"><img src="images/java.svg" alt="Java_Logo"></div>
+                <div class="face face5"><img src="images/node-js.svg" alt="node-js"></div>
+                <div class="face face6"><img src="images/ionic.svg" alt="ionic"></div>
+            </div>
         </div>
 
         <div class="about-content ">
@@ -69,15 +81,13 @@
             -->
             <h3>
                 <p>
-                    Passionate about web development, I create high-performance and optimized applications. My expertise covers modern technologies and best practices to deliver innovative solutions tailored to users' needs. </p>
-                <!--
-                    <a href="# " class="btn ">Read More</a>
-        </div>
-                    -->
+                    Passionate about web development, I specialize in creating high-performance and optimized applications. My expertise spans modern technologies and best practices, ensuring the delivery of innovative solutions tailored to users' needs. In addition to my
+                    development skills, I have a solid foundation in DevOps and am currently deepening my knowledge in this field. I actively work with tools like Docker, Jenkins, Prometheus, and Grafana to streamline and automate processes. I am committed
+                    to delivering high-quality solutions and take pride in solving complex problems. As a self-taught developer, I continuously learn and grow. I hold an Engineering Degree in Software Engineering and a Bachelor's Degree in Computer Science.</p>
+
     </section>
 
-
-    <!--service section design-->
+    <!--service section design
     <section class="services" id="services">
         <h2 class="heading ">My <span>Services</span></h2>
         <div class="services-container">
@@ -102,8 +112,32 @@
             </div>
         </div>
     </section>
+-->
+    <section class="skills-section">
+        <h2 class="section-title">Development Skills And Tools</h2>
+        <div class="skills-container">
+            <div class="skill"><img src="images/angular.svg" alt="Angular"> <span>Angular</span></div>
+            <div class="skill"><img src="/images/spring-boot.svg" alt="Spring Boot"> <span>Spring Boot</span></div>
+            <div class="skill"><img src="images/java.svg" alt="Java"> <span>Java</span></div>
+            <div class="skill"><img src="images/js.png" alt="JavaScript"> <span>JavaScript</span></div>
+            <div class="skill"><img src="images/ts.png" alt="TypeScript"> <span>TypeScript</span></div>
+            <div class="skill"><img src="images/dotnet.svg" alt=".NET"> <span>.NET</span></div>
+            <div class="skill"><img src="images/symfony.svg" alt="Symfony"> <span>Symfony</span></div>
+            <div class="skill"><img src="images/android.jpg" alt="Android"> <span>Android</span></div>
+            <div class="skill"><img src="images/ionic.svg" alt="Ionic"> <span>Ionic</span></div>
+            <div class="skill"><img src="images/mongodb.svg" alt="MongoDB"> <span>MongoDB</span></div>
+            <div class="skill"><img src="images/mysql.svg" alt="MySQL"> <span>MySQL</span></div>
+            <div class="skill"><img src="images/postgree.png" alt="PostgreSQL"> <span>PostgreSQL</span></div>
+        </div>
 
-
+        <h2 class="section-title">DevOps Skills And Tools</h2>
+        <div class="skills-container">
+            <div class="skill"><img src="images/jenkins.svg" alt="Jenkins"> <span>Jenkins</span></div>
+            <div class="skill"><img src="images/docker.svg" alt="Docker"> <span>Docker</span></div>
+            <div class="skill"><img src="images/grafana.png" alt="Grafana"> <span>Grafana</span></div>
+            <div class="skill"><img src="images/prometheus.png" alt="Prometheus"> <span>Prometheus</span></div>
+        </div>
+    </section>
     <!--portfolio section design-->
     <!--
    
