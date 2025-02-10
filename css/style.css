@@ -1363,6 +1363,7 @@ span {
     /* Afficher le menu burger */
     #menu-icon {
         display: block;
+        text-align: center;
     }
 }
 
