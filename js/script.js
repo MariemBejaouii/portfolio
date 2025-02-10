@@ -70,3 +70,35 @@ const typed = new Typed(".multiple-text", {
     backDelay: 1000,
     loop: true,
 });
+/*---send email---- */
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.innerText = 'Sending...'; // Changement du texte du bouton
+
+        var params = {
+            fullname: document.getElementById("fullname").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        };
+
+        console.log("Params envoyés :", params); // ✅ Affichage des params dans la console
+
+        const serviceID = 'service_nna0nl5';
+        const templateID = 'template_dj2dm3e';
+
+        emailjs.send(serviceID, templateID, params) // ✅ Envoi des params correctement
+            .then(() => {
+                btn.innerText = 'Send Email';
+                alert('Email sent successfully !!');
+            })
+            .catch((err) => {
+                btn.innerText = 'Send Email';
+                console.error('Erreur:', err);
+                alert('Failed to send. Please check the information and try again.');
+            });
+    });

@@ -625,11 +625,6 @@ span {
     max-width: 600px;
 }
 
-.about-content .heading {
-    font-size: 4.5rem;
-    text-align: center;
-}
-
 .about-content h3 {
     font-size: 2.6rem;
 }
@@ -1062,11 +1057,6 @@ span {
 .about-content {
     flex: 1;
     max-width: 600px;
-}
-
-.about-content .heading {
-    font-size: 4.5rem;
-    text-align: center;
 }
 
 .about-content h3 {
@@ -1642,4 +1632,47 @@ span {
 .skill span {
     font-size: 1.6rem;
     color: var(--text-color);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover img {
+    transform: scale(1.2);
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }

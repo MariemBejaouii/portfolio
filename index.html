@@ -16,6 +16,22 @@
 
     <!-- Importation de la police Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <!--emailJs-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('oEB1WBdu1RIzNz2Gi');
+    </script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </head>
 
 <body>
@@ -42,8 +58,7 @@
             <h1>Mariem Bejaoui</h1>
             <h3>And I'm a <span class="multiple-text"></span>
             </h3>
-            <p>I am a computer engineer specializing in software engineering, and I am also passionate about web, mobile, desktop development and DevOps.</p>
-
+            <p>I'm a passionate Software Engineer specializing in Full-Stack Development, with a deep enthusiasm for web, mobile, and desktop applications, as well as DevOps. I love turning ideas into powerful, seamless digital experiences!</p>
             <div class="social-media">
 
                 <a href="# "><i class='bx bxl-facebook'></i></a>
@@ -81,9 +96,9 @@
             -->
             <h3>
                 <p>
-                    Passionate about web development, I specialize in creating high-performance and optimized applications. My expertise spans modern technologies and best practices, ensuring the delivery of innovative solutions tailored to users' needs. In addition to my
-                    development skills, I have a solid foundation in DevOps and am currently deepening my knowledge in this field. I actively work with tools like Docker, Jenkins, Prometheus, and Grafana to streamline and automate processes. I am committed
-                    to delivering high-quality solutions and take pride in solving complex problems. As a self-taught developer, I continuously learn and grow. I hold an Engineering Degree in Software Engineering and a Bachelor's Degree in Computer Science.</p>
+                    Passionate about development, I specialize in creating high-performance and optimized applications. My expertise spans modern technologies and best practices, ensuring the delivery of innovative solutions tailored to users needs. In addition to my development
+                    skills, I have a solid foundation in DevOps and am currently deepening my knowledge in this field. I actively work with tools like Docker, Jenkins, Prometheus, and Grafana to streamline and automate processes. I am committed to delivering
+                    high-quality solutions and take pride in solving complex problems. As a self-taught developer, I continuously learn and grow. I hold an Engineering Degree in Software Engineering and a Bachelor's Degree in Computer Science.</p>
 
     </section>
 
@@ -113,7 +128,7 @@
         </div>
     </section>
 -->
-    <section class="skills-section">
+    <section class="skills-section" id="skills-section">
         <h2 class="section-title">Development Skills And Tools</h2>
         <div class="skills-container">
             <div class="skill"><img src="images/angular.svg" alt="Angular"> <span>Angular</span></div>
@@ -214,23 +229,29 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="# ">
+        <form id="form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email " placeholder="Email Adress">
+                <input type="text" id="fullname" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text " placeholder="Email Subject">
+                <input type="number" id="phone_number" placeholder="Mobile Number">
+                <input type="text" id="subject" placeholder="Email Subject">
             </div>
-            <textarea name=" " id=" " cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn"></form>
+
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+            <input type="submit" id="button" value="Send Email" class="btn">
+        </form>
+
+
     </section>
+
 
     <!--footer desgin-->
 
-    <footer class="footer">
+    <footer class=" footer ">
         <div class="footer-text ">
             <p>Copyright &copy; 2025 by Mariem Bejaoui | All rights Reserved.</p>
         </div>
@@ -243,13 +264,13 @@
     </footer>
 
     <!--Scroll reveal-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal "></script>
 
 
     <!--typed js-->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js "></script>
 
 
     <!--custom js-->
-    <script src="js/script.js"></script>
+    <script src="js/script.js "></script>
 </body>
