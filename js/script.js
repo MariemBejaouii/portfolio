@@ -6,7 +6,6 @@ let navbar = document.querySelector(".navbar");
 menuIcon.addEventListener("click", () => {
     navbar.classList.toggle("active");
 
-    // Changer l'icône en "X" lorsqu'on ouvre le menu
     if (navbar.classList.contains("active")) {
         menuIcon.classList.replace("bx-menu", "bx-x");
     } else {
@@ -72,33 +71,33 @@ const typed = new Typed(".multiple-text", {
 });
 /*---send email---- */
 
-const btn = document.getElementById('button');
+const btn = document.getElementById("button");
 
-document.getElementById('form')
-    .addEventListener('submit', function(event) {
-        event.preventDefault();
+document.getElementById("form").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-        btn.innerText = 'Sending...'; // Changement du texte du bouton
+    btn.innerText = "Sending...";
 
-        var params = {
-            fullname: document.getElementById("fullname").value,
-            email: document.getElementById("email").value,
-            message: document.getElementById("message").value
-        };
+    var params = {
+        fullname: document.getElementById("fullname").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    };
 
-        console.log("Params envoyés :", params); // ✅ Affichage des params dans la console
+    console.log("Params envoyés :", params);
 
-        const serviceID = 'service_nna0nl5';
-        const templateID = 'template_dj2dm3e';
+    const serviceID = "service_nna0nl5";
+    const templateID = "template_dj2dm3e";
 
-        emailjs.send(serviceID, templateID, params) // ✅ Envoi des params correctement
-            .then(() => {
-                btn.innerText = 'Send Email';
-                alert('Email sent successfully !!');
-            })
-            .catch((err) => {
-                btn.innerText = 'Send Email';
-                console.error('Erreur:', err);
-                alert('Failed to send. Please check the information and try again.');
-            });
-    });
+    emailjs
+        .send(serviceID, templateID, params)
+        .then(() => {
+            btn.innerText = "Send Email";
+            alert("Email sent successfully !!");
+        })
+        .catch((err) => {
+            btn.innerText = "Send Email";
+            console.error("Erreur:", err);
+            alert("Failed to send. Please check the information and try again.");
+        });
+});
