@@ -1650,10 +1650,11 @@ span {
     color: var(--text-color);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .footer-iconTop {
-        left: 50%;
-        right: auto;
-        transform: translateX(-50%);
+        left: 50% !important;
+        right: auto !important;
+        padding-top: 2rem;
+        transform: translateX(334%) !important;
     }
 }
