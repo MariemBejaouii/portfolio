@@ -1604,9 +1604,6 @@ span {
     animation: fadeInUp 1s ease-out forwards;
 }
 
-
-/* Animation de l'apparition des compétences */
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1651,4 +1648,12 @@ span {
 .skill span {
     font-size: 1.4rem;
     color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    .footer-iconTop {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
 }
